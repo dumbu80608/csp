@@ -1,0 +1,14 @@
+body{
+    background-color:white;
+}
+#center{
+    display: grid;
+    place-items: center;
+    border-bottom: 25px;
+}
+a{
+    text-decoration-line: none;
+}
+.vid{
+    place-items: center;
+}

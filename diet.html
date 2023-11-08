@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box }
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 2000px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #adf7b6;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #cccccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 2000px;
+}
+#pk{
+  font-family: "Trirong", serif;
+  color: rgb(83, 26, 206);
+  font-size: 900;
+    
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav-right {
+    float: right;
+    color: #f2f2f2;
+    padding-right:16px;
+
+  }
+</style>
+<link rel="stylesheet" href="fit.css">
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="fitnesss.html">Fitness</a>
+    <a href="diet.html">Diet</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">About</a>
+        <div class="topnav-right"> <H4 >HEALTH AND HYGIENE</H4></div>
+    </div> 
+<h1 id="pk">Diet</h1>
+<p>
+ 
+  <div>
+
+    <h4>Eating a healthy, balanced diet is an important part of maintaining good health, and can help you feel your best. This means eating a wide variety of foods in the right proportions, and consuming the right amount of food and drink to achieve and maintain a healthy body weight.</h4>
+  </div>
+</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'diet')" id="defaultOpen">diet</button>
+  <button class="tablinks" onclick="openCity(event, 'How to Lose Weight Safely')">How to Lose Weight Safely
+</button>
+  
+</div>
+
+<div id="diet" class="tabcontent">
+  
+  <h2>diet</h2>
+  <p>
+    <div><h3>Overview</h3></div>
+    <hr>
+    <h4>Eating a healthy, balanced diet is an important part of maintaining good health, and can help you feel your best. This means eating a wide variety of foods in the right proportions, and consuming the right amount of food and drink to achieve and maintain a healthy body weight..</h4>
+    
+   <h4> When it comes to diet, these components are:
+   <ul type="circle">
+    <li>High-protein   </li>
+
+    <li>low-carbohydrate diets</li>
+    <li>The Atkins Diet</li>
+    <li>body composition</li>
+   <li> Ketogenic diet...</li>
+   </ul></h4>
+   <div id="center">
+    
+
+    <iframe width=100% height="315" src="https://www.youtube.com/embed/Gmh_xMMJ2Pw?si=TKixpp66YLqarKtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</div>
+   
+   
+    </p>
+  
+</div>
+
+<div id="How to Lose Weight Safely" class="tabcontent">
+  <h2>Truth About Weight Loss</h2>
+  <p>
+    <div id="st">
+     <h3>You want to drop pounds, now. And you want to do it safely. But how?</h3><hr>
+
+<h3>Many experts say it’s best to lose weight gradually. It’s more likely to stay off. If you shed pounds too fast, you’ll lose muscle, bone, and water instead of fat, says the Academy of Nutrition and Dietetics.</h3> 
+
+<h4>>These activities include:
+<ul type="circle">
+  <li>take less amount of fat</li>
+  <li>low low-carbohydrate</li>
+  <li>Drink more water, so you’re not so hungry...</li>
+  
+</ul>
+</h4>
+<img src="fat.webp" width=100%>
+<div>
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html>
